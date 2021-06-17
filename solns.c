@@ -23,8 +23,8 @@ float average (int z[],int n){
   for(int i=0;i<n;i++){
     sum+=z[i];
   }
-  float avg= sum;
-  float avg = (float) avg/n ;
+  int x= sum;
+  float avg = (float) x/n ;
   return(avg);
 }
 int factors (int n, int z[]){
