@@ -19,7 +19,7 @@ int min (int z[],int n){
 }
 
 float average (int z[],int n){
-  flaot sum=0;
+  float sum=0;
   for(int i=0;i<n;i++){
     sum+=z[i];
   }
