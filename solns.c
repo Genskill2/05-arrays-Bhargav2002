@@ -12,7 +12,7 @@ int max (int z[],int n){
 int min (int z[],int n){
   int min_so_far =z[0];
   for(int i=0;i<n;i++){
-    if(z[i]<max_so_far)
+    if(z[i]<min_so_far)
       min_so_far =z[i];
   }
   return(min_so_far);
