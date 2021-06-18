@@ -28,35 +28,34 @@ float average (int z[],int n){
   return(avg);
 }
 int factors (int n, int z[]){
-  int x=2;
+  int x=2,i=0;
   while(n!=1){
     if (n%x==0){
       while(n%x==0){
-        z[]=x;
+        z[i]=x;
+        i++;
         n=(n/x);
       }
     }
     x++;
     }
-  return (z[]);
+  return (i);
 }
 
 int mode (int z[] ,int n){
-  int x[];
-  int max_so_far = z[0];
-  for(int i=0;i<n;i++){
-    if(z[i]>max_so_far)
-      max_so_far=z[i];
+  int a=0,b=0;
+  for(int i=0;i<n;++i){
+    int c=0;
+    for(int j=0;j<n;++j){
+      if(z[j]==z[i])
+        c++;
+    }
+    if(c>a){
+      a =c;
+      b = z[i];
+    }
   }
- int y= max_so_far;
-   for (int j=0 ; j<= y;j++){
-     for (int k=0;k<n;k++){
-       if(z[k]==j){
-         x[j]++;
-         }
-     }
-   }
-  return(x[]);
+  return(b);
 }
          
 
